@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fml2blender"
+version = "0.1.0"
+description = "Convert Floorplanner FML floor plans to Blender 3D scenes"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "David de Meij"}
+]
+keywords = ["floorplanner", "blender", "3d", "floor-plan", "fml"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Graphics :: 3D Modeling",
+]
+dependencies = [
+    "requests>=2.28.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+    "black",
+    "ruff",
+]
+
+[project.scripts]
+fml2blender = "fml2blender.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/daviddemeij/fml2blender"
+Repository = "https://github.com/daviddemeij/fml2blender"
+Issues = "https://github.com/daviddemeij/fml2blender/issues"
+
+[tool.setuptools.packages.find]
+include = ["fml2blender*"]
+
+[tool.black]
+line-length = 100
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

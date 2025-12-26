@@ -2,7 +2,15 @@
 
 Convert [Floorplanner](https://floorplanner.com) floor plans to [Blender](https://blender.org) 3D scenes.
 
-![Example render](docs/example.png)
+**Before (Floorplanner):**
+
+<img src="docs/floorplanner.png" alt="Original Floorplanner floor plan" width="500"/>
+
+**After (Blender):**
+
+<img src="docs/blender_day.png" alt="Blender day render" width="400"/>
+<img src="docs/blender_night.png" alt="Blender night render" width="400"/>
+<img src="docs/blender_no_walls.png" alt="Blender scene without walls" width="400"/>
 
 ## Features
 
@@ -28,11 +36,11 @@ cd fml2blender
 pip install -e .
 ```
 
-### 2. Get FML Files
-
 FML files contain floor plan data used by Floorplanner. You can capture them from various website that use floorplanner such as real estate listing websites like Funda.nl
 
 #### From Floorplanner.com
+
+<img src="docs/floorplanner.png" alt="Floorplanner interface" width="500"/>
 
 1. Open your project on [floorplanner.com](https://floorplanner.com)
 2. Open browser DevTools → **Network** tab

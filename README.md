@@ -88,6 +88,7 @@ my-house/
 ├── floor3.fml          # Second floor
 ├── manifest.json       # Asset ID → file path mapping
 ├── products.json       # Product metadata (dimensions, names)
+├── materials.json      # Material metadata (colors, PBR maps, tiling)
 └── assets/
     ├── abc123.glb      # 3D models
     ├── def456.glb
@@ -98,6 +99,7 @@ my-house/
 
 - Python 3.10+
 - [Blender](https://blender.org) 4.0+ (for build command)
+- For legacy GLB v1 assets (rare older windows/doors), install Node.js and `gltf-pipeline` so harvest can auto-upgrade to glTF 2: `npm i -g gltf-pipeline`
 
 The `harvest` command only needs Python. The `build` command requires Blender to be installed.
 

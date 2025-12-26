@@ -56,7 +56,10 @@ def cmd_build(args):
         cmd.append("-b")  # Background mode
     
     cmd.extend(["-P", build_script, "--", project_dir])
-    
+
+    if args.no_lights:
+        cmd.append("--no-lights")
+
     if args.level_height:
         cmd.extend(["--level-height", str(args.level_height)])
     
@@ -145,6 +148,11 @@ def main():
         "--gui",
         action="store_true",
         help="Open Blender GUI instead of running in background",
+    )
+    build_parser.add_argument(
+        "--no-lights",
+        action="store_true",
+        help="Skip auto-adding lights (emitters/lamps/diffusers)",
     )
     build_parser.set_defaults(func=cmd_build)
     

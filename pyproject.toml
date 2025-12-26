@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fml2blender"
-version = "0.1.0"
+version = "0.1.1"
 description = "Convert Floorplanner FML floor plans to Blender 3D scenes"
 readme = "README.md"
 license = {text = "MIT"}

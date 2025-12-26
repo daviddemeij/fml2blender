@@ -4,13 +4,13 @@ Convert [Floorplanner](https://floorplanner.com) floor plans to [Blender](https:
 
 **Before (Floorplanner):**
 
-<img src="docs/floorplanner.png" alt="Original Floorplanner floor plan" width="500"/>
+<img src="https://github.com/daviddemeij/fml2blender/raw/main/docs/floorplanner.png" alt="Original Floorplanner floor plan" width="500"/>
 
 **After (Blender):**
 
-<img src="docs/blender_day.png" alt="Blender day render" width="400"/>
-<img src="docs/blender_night.png" alt="Blender night render" width="400"/>
-<img src="docs/blender_no_walls.png" alt="Blender scene without walls" width="400"/>
+<img src="https://github.com/daviddemeij/fml2blender/raw/main/docs/blender_day.png" alt="Blender day render" width="400"/>
+<img src="https://github.com/daviddemeij/fml2blender/raw/main/docs/blender_night.png" alt="Blender night render" width="400"/>
+<img src="https://github.com/daviddemeij/fml2blender/raw/main/docs/blender_no_walls.png" alt="Blender scene without walls" width="400"/>
 
 ## Features
 
@@ -40,7 +40,7 @@ FML files contain floor plan data used by Floorplanner. You can capture them fro
 
 #### From Floorplanner.com
 
-<img src="docs/floorplanner.png" alt="Floorplanner interface" width="500"/>
+<img src="https://github.com/daviddemeij/fml2blender/raw/main/docs/floorplanner.png" alt="Floorplanner interface" width="500"/>
 
 1. Open your project on [floorplanner.com](https://floorplanner.com)
 2. Open browser DevTools → **Network** tab
